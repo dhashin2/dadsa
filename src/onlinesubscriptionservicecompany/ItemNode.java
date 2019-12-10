@@ -35,4 +35,12 @@ public class ItemNode { //Creating a node which only works with item instances
         this.nextItem = next;
     }
     
+    public void printItem(){
+        String name = this.item.getItemName();
+        int itemNo = this.item.getItemNumberID();
+        int stock = this.item.getItemStock();
+        
+        System.out.println("Item Name: " + name + " Item No: " + itemNo + " Quantity: " + stock);
+    }
+    
 }

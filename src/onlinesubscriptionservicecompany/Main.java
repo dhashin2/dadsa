@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class Main {
     
     public static void main(String[] args) {
-        ItemLinkedList itemList = new ItemLinkedList();
         CSVReader csv = new CSVReader();
         ItemLinkedList list = CSVReader.itemFileReader();
         
@@ -32,7 +31,7 @@ public class Main {
                     break;
                 
                 case "1": //Case for showing item list
-                    itemList.printItemList();
+                    list.printItemList();
                     break;
                 
                 case "2": //Case for showing member list
