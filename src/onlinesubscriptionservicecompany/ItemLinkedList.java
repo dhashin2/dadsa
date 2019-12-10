@@ -33,12 +33,14 @@ public class ItemLinkedList {
     public void printItemList(){ //Method to print item list
         
         ItemNode current = head; //Declaring a variable "current" to store head data temporarily
-        while (current != null){ //Printing all items in the list one by one
-            System.out.print(current); //Only .print in order to print in different lines
-            current = current.getNextItem();
+        if(current != null){
+                while (current != null){ //Printing all items in the list one by one
+                current.printItem(); //Only .print in order to print in different lines
+                current = current.getNextItem();
+            }
+        } else {
+            System.out.println("Nothing to see here"); //While current == null means list is empty
         }
-        System.out.println("Nothing to see here"); //While current == null means list is empty
-        
     }
     
 }
